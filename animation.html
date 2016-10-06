@@ -6,17 +6,20 @@
   </head>
   <body>
     <svg width="80%" viewBox="0 0 200 200">
-      <circle
 <circle cx="100" cy="60" r="20" fill="white"/>
 <circle cx="100" cy="90" r="25" fill="white"/>
 <circle cx="100" cy="125" r="35" fill="white"/>
 <rect x="0" y="150" width="200" height=50 fill="#392613"/>
 <text x="85" y="15" font-family="Ruslan Display"font-size="10" fill="#ccffff">Hello</text>
 <rect x="0" y="150" width="200" height="10" fill="white"/>
-<circle cx="10" cy="15" r="3" fill="white">
-  <animate attributeName="cy" from="20" to"100" dur="5s" repeatCount="indefinite"/>
-    <animate attributeName="cx" from="1" to="2" dur="3s" repeatCount="indefinite"/>
-  </circle>
+<circle cx="10" cy="5" r="3" fill="white">
+  <animate id="circle1" attributeName="cx" from="5" to="5"
+  dur="2s" begin="0s; circle2.end"/>
+  <animate id="circle2" attributeName="cy" from="0" to="100" dur="2s" begin="circle1.end"/>
+</circle>
+<circle cx="50" cy="5" r="3" fill="white">
+  <animate id="circle2" attributeName="cy" from="0" to="100" dur="2s" begin="circle1.end"/>
+</circle>
     </svg>
   </body>
 </html>
