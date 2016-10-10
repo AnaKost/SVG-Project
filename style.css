@@ -2,3 +2,11 @@
 svg{
   background-color:#2a6f6f;
 }
+
+h1{
+  font-size:15px;
+  font-family: 'Ruslan Display', cursive;
+  color: #2a6f6f;
+  border-style: double;
+  border-color: #ccffff;
+}
